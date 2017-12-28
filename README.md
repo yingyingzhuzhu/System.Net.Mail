@@ -18,29 +18,47 @@ mail.IsBodyHtml = false;
 
 ## Gmail
 SmtpClient smtp = new SmtpClient();
+
 smtp.Host = "smtp.gmail.com";
+
 smtp.Port = 587;  
-smtp.UseDefaultCredentials = false;  
+
+smtp.UseDefaultCredentials = false; 
+
 smtp.Credentials = new System.Net.NetworkCredential("sender_mail", "password"); // Enter sender's email and password 
+
 smtp.EnableSsl = true;
+
 smtp.Send(mail);
 
 ## 126 mail
 SmtpClient smtp = new SmtpClient();
+
 smtp.Host = "smtp.126.com"; 
+
 smtp.Port = 465; 
+
 smtp.UseDefaultCredentials = false;  
+
 smtp.Credentials = new System.Net.NetworkCredential("sender_mail", "password"); // Enter sender's email and password 
+
 smtp.EnableSsl = true;
+
 smtp.Send(mail);
 
 ## QQ mail
 SmtpClient smtp = new SmtpClient(); 
+
 smtp.Host = "smtp.qq.com";
+
 smtp.Port = 587;  
+
 smtp.UseDefaultCredentials = false;  
+
 smtp.Credentials = new System.Net.NetworkCredential("sender_mail", "password"); // Enter sender's email and password 
+
 smtp.EnableSsl = true;
+
 smtp.Send(mail);
 
 ## Hotmail
