@@ -24,11 +24,14 @@
 
 1. Login to sender's Gmail account
 2. Select "Sign-in & security"
-![](https://www.dropbox.com/s/6eaz72xjm19jzsg/Sign-in_and_security.png?dl=0)
+
+![](images/Sign-in_and_security.png?dl=0)
 3. Select "Apps with account access"
-![](https://www.dropbox.com/s/pttpum34h8qt50s/Gmail_apps_with_account_access.png?dl=0)
+
+![](images/Gmail_apps_with_account_access.png?dl=0)
 4. Set "Allow less secure apps" as "ON"
-![](https://www.dropbox.com/s/pttpum34h8qt50s/Gmail_apps_with_account_access.png?dl=0)
+
+![](images/Gmail_apps_with_account_access.png?dl=0)
 
 *Write code as follows:*
 
