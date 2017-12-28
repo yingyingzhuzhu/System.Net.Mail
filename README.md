@@ -63,3 +63,7 @@ smtp.Send(mail);
 
 ## Hotmail
 
+
+
+####Reference:
+1. https://msdn.microsoft.com/en-us/library/system.net.mail.mailmessage(v=vs.110).aspx
