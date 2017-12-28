@@ -1,69 +1,91 @@
 # System.Net.Mail
 
 ## General mail setting
-MailAddress sender_mail = new MailAddress("sender_mail");//enter sender's email
 
-MailMessage mail = new MailMessage();  
+*Write code as follows:*
 
-mail.To.Add("receiver_mail");//enter receiver's email
+    MailAddress sender_mail = new MailAddress("sender_mail");//enter sender's email
 
-mail.From = sender_mail;
+    MailMessage mail = new MailMessage();  
 
-mail.Subject = "subject";  
+    mail.To.Add("receiver_mail");//enter receiver's email
 
-mail.Body = "body"; 
+    mail.From = sender_mail;
 
-mail.IsBodyHtml = false;
+    mail.Subject = "subject";  
+
+    mail.Body = "body"; 
+
+    mail.IsBodyHtml = false;
 
 
 ## Gmail
-SmtpClient smtp = new SmtpClient();
+*Manage Gmail account access as follows:*
 
-smtp.Host = "smtp.gmail.com";
+1. Login to sender's Gmail account
+2. Select "Sign-in & security"
+![](https://www.dropbox.com/s/6eaz72xjm19jzsg/Sign-in_and_security.png?dl=0)
+3. Select "Apps with account access"
+![](https://www.dropbox.com/s/pttpum34h8qt50s/Gmail_apps_with_account_access.png?dl=0)
+4. Set "Allow less secure apps" as "ON"
+![](https://www.dropbox.com/s/pttpum34h8qt50s/Gmail_apps_with_account_access.png?dl=0)
 
-smtp.Port = 587;  
+*Write code as follows:*
 
-smtp.UseDefaultCredentials = false; 
 
-smtp.Credentials = new System.Net.NetworkCredential("sender_mail", "password"); // Enter sender's email and password 
+    SmtpClient smtp = new SmtpClient();
 
-smtp.EnableSsl = true;
+    smtp.Host = "smtp.gmail.com";
 
-smtp.Send(mail);
+    smtp.Port = 587;  
+
+    smtp.UseDefaultCredentials = false; 
+
+    smtp.Credentials = new System.Net.NetworkCredential("sender_mail", "password"); // Enter sender's email and password 
+
+    smtp.EnableSsl = true;
+
+    smtp.Send(mail);
+
+
 
 ## 126 mail
-SmtpClient smtp = new SmtpClient();
+*Write code as follows:*
 
-smtp.Host = "smtp.126.com"; 
+    SmtpClient smtp = new SmtpClient();
 
-smtp.Port = 465; 
+    smtp.Host = "smtp.126.com"; 
 
-smtp.UseDefaultCredentials = false;  
+    smtp.Port = 465; 
 
-smtp.Credentials = new System.Net.NetworkCredential("sender_mail", "password"); // Enter sender's email and password 
+    smtp.UseDefaultCredentials = false;  
 
-smtp.EnableSsl = true;
+    smtp.Credentials = new System.Net.NetworkCredential("sender_mail", "password"); // Enter sender's email and password 
 
-smtp.Send(mail);
+    smtp.EnableSsl = true;
+
+    smtp.Send(mail);
 
 ## QQ mail
-SmtpClient smtp = new SmtpClient(); 
+*Write code as follows:*
 
-smtp.Host = "smtp.qq.com";
+    SmtpClient smtp = new SmtpClient(); 
 
-smtp.Port = 587;  
+    smtp.Host = "smtp.qq.com";
 
-smtp.UseDefaultCredentials = false;  
+    smtp.Port = 587;  
 
-smtp.Credentials = new System.Net.NetworkCredential("sender_mail", "password"); // Enter sender's email and password 
+    smtp.UseDefaultCredentials = false;  
 
-smtp.EnableSsl = true;
+    smtp.Credentials = new System.Net.NetworkCredential("sender_mail", "password"); // Enter sender's email and password 
 
-smtp.Send(mail);
+    smtp.EnableSsl = true;
+
+    smtp.Send(mail);
 
 ## Hotmail
 
 
 
-####Reference:
+Reference:
 1. https://msdn.microsoft.com/en-us/library/system.net.mail.mailmessage(v=vs.110).aspx
