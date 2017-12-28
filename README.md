@@ -2,12 +2,19 @@
 
 ## General mail setting
 MailAddress sender_mail = new MailAddress("sender_mail");//enter sender's email
+
 MailMessage mail = new MailMessage();  
+
 mail.To.Add("receiver_mail");//enter receiver's email
+
 mail.From = sender_mail;
+
 mail.Subject = "subject";  
-mail.Body = "body";  
+
+mail.Body = "body"; 
+
 mail.IsBodyHtml = false;
+
 
 ## Gmail
 SmtpClient smtp = new SmtpClient();
