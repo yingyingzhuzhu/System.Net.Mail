@@ -26,12 +26,15 @@
 2. Select "Sign-in & security"
 
 ![](images/Sign-in_and_security.png?dl=0)
+
 3. Select "Apps with account access"
 
 ![](images/Gmail_apps_with_account_access.png?dl=0)
+
 4. Set "Allow less secure apps" as "ON"
 
 ![](images/Gmail_apps_with_account_access.png?dl=0)
+
 
 *Write code as follows:*
 
